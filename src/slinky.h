@@ -19,9 +19,19 @@ class Slinky {
 	
 	float radius;
 	int fade;
+	int numExtensions;
 	ofColor color;
+	bool clicked;
 	
-	ofPoint drawPos;
+	float c;
+	
+	ofPoint pos;
+	ofPoint endPos;
+	ofPoint startPos;
+	
+	vector <ofPoint> positions;
+	vector <ofPoint> endPositions;
+	
 	
 	Slinky();
 };

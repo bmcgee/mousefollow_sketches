@@ -5,6 +5,9 @@ Slinky slinky;
 
 //--------------------------------------------------------------
 void ofApp::setup(){
+	ofSetFrameRate(60);
+	
+	
 	slinky.setup();
 }
 
