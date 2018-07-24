@@ -19,6 +19,21 @@ void Slinky::update(ofVec2f _drawPos){
 	drawPos = _drawPos;
 }
 void Slinky::draw(){
-	ofSetColor(ofColor::red);
-	ofDrawCircle(drawPos.x, drawPos.y, radius);
-	}
+    for (int i=0;i<20;i++) {
+      
+        ofVec2f tempPos(ofGetMouseX(),ofGetMouseY());
+
+        ofPushMatrix();
+
+            ofTranslate(ofGetWidth()/2, ofGetHeight()/2);
+        
+            float opacity = ofMap(i, 0, 20, 0, 255);
+            ofSetColor(255, 255, 255, int(opacity+0.5));
+            cout << tempPos << "\n";
+            tempPos = tempPos/i;
+            ofDrawCircle(tempPos.x, tempPos.y, radius);
+        
+        ofPopMatrix();
+    }
+    
+}
