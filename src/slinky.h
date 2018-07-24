@@ -14,14 +14,14 @@ class Slinky {
 	public:
 	
 	void setup();
-	void update(ofVec2f _drawPos);
+	void update(ofPoint _drawPos);
 	void draw();
 	
 	float radius;
 	int fade;
 	ofColor color;
 	
-	ofVec2f drawPos;
+	ofPoint drawPos;
 	
 	Slinky();
 };
