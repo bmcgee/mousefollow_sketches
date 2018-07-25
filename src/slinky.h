@@ -13,9 +13,10 @@
 class Slinky {
 	public:
 	
-	void setup();
-	void update(ofPoint _drawPos);
+	void setup(int _x, int _y, int _copies, float _scalar);
+	void update(int _x, int _y);
 	void draw();
+	void animate();
 	
 	float radius;
 	int fade;
@@ -31,6 +32,8 @@ class Slinky {
 	
 	vector <ofPoint> positions;
 	vector <ofPoint> endPositions;
+	
+	ofImage slinkyImage;
 	
 	
 	Slinky();
