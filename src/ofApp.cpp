@@ -13,9 +13,9 @@ void ofApp::setup(){
 		     trump.getHeight()*scalar
 		     );
 	
-	slinky.setup(285,908,200,scalar);
+	slinky.setup(285,908,1000,scalar);
 	
-
+	cout << slinky.clicked;
 	
 
 }
